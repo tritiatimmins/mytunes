@@ -2,9 +2,14 @@
 var SongQueue = Songs.extend({
 
   initialize: function(){
-    this.songQueue = [];
+    songQueue = [];
+
   },
 
+  playFirst: function(){
+    this.models[0].play();
+    // this.trigger('play', this);
+  },
 
 
 });
